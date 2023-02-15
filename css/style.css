@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 50px 0px;
+}
+
+.container {
+  padding: 40px;
+}
+
+.wrapper__title {
+  font-family: "Halvar Breitschrift";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 108.5%;
+  color: #26252A;
+}
+
+.black {
+  color: #26252A;
+}
+
+@font-face {
+  font-family: "Halvar Breitschrift";
+  src: local("Halvar Breitschrift Bd"), local("Halvar-Breitschrift-Bd"), url("../fonts/HalvarBreit-Bd.woff2") format("woff2"), url("../fonts/HalvarBreit-Bd.woff") format("woff"), url("../fonts/HalvarBreit-Bd.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circe Regular";
+  src: url("../fonts/Circe-Regular.eot");
+  src: url("../fonts/Circe-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Regular.woff") format("woff"), url("../fonts/Circe-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.header {
+  font-family: Halvar Breitschrift, sans-serif;
+  position: relative;
+  margin-bottom: 60px;
+}
+.header__squre {
+  background-color: #fff;
+}
+.header__image {
+  position: absolute;
+  width: 540px;
+  right: 40px;
+  bottom: 0;
+}
+.header__image img {
+  width: 100%;
+  z-index: 1;
+}
+.header__block1 {
+  background: #F5F6F9;
+  border-radius: 40px;
+}
+.header__info {
+  font-family: Circe Regular, sans-serif;
+  display: flex;
+  margin-bottom: 55px;
+}
+.header__logo {
+  font-size: 24px;
+  line-height: 120%;
+  margin-right: 40px;
+}
+.header__logo span {
+  color: #014AEB;
+}
+.header__text {
+  font-size: 18px;
+  line-height: 140%;
+  width: 295px;
+}
+.header__text-block2 {
+  font-family: Circe Regular, sans-serif;
+  width: 474px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+}
+.header__title {
+  color: #26252A;
+  font-weight: 800;
+  font-size: 180px;
+}
+.header__block2 {
+  background: #014AEB;
+  border-radius: 40px;
+  color: #fff;
+}
+.header__statistic {
+  display: flex;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 108.5%;
+  margin: 0px 0px 57px 0;
+}
+.header__yandex {
+  margin-right: 64px;
+}
+
+.statistic span {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 4px 8px;
+}
+.statistic__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  font-family: Circe Regular, sans-serif;
+}
+
+.about__items {
+  width: 100%;
+  display: flex;
+  margin-top: 15px;
+}
+.about__item {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  padding: 40px;
+  background-color: #F5F6F9;
+  border-radius: 30px;
+}
+
+.item:nth-child(1) {
+  width: 350px;
+  margin-right: 15px;
+  gap: 84px;
+}
+.item:nth-child(2) {
+  margin-right: 15px;
+  gap: 152px;
+}
+.item:nth-child(3) {
+  background: url("../image/moscow.jpg") no-repeat center;
+  gap: 152px;
+  color: #fff;
+}
+.item__title {
+  font-family: "Halvar Breitschrift";
+  font-size: 40px;
+  line-height: 108.5%;
+  font-weight: 800;
+}
+.item__text {
+  font-family: Circe Regular, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: rgba(38, 37, 42, 0.7);
+}
+
+.white {
+  color: #fff;
+}
+
+.directions {
+  background: #EA5F70 url("../image/women2.png") no-repeat center;
+  border-radius: 42px;
+  padding: 60px 40px 40px 40px;
+  position: relative;
+  margin-top: 70px;
+}
+.directions__title {
+  font-family: "Halvar Breitschrift";
+  font-size: 56px;
+  color: #FFFFFF;
+  width: 576px;
+}
+.directions__text {
+  font-family: "Halvar Breitschrift";
+  font-size: 24px;
+  line-height: 120%;
+  width: 305px;
+  color: #FFFFFF;
+  position: absolute;
+  width: 305px;
+  height: 232px;
+  left: 954px;
+  top: 157px;
+}
+.directions__items {
+  width: 100%;
+  margin-top: 245px;
+  display: flex;
+  gap: 15px;
+}
+
+.direction__item {
+  background: #FFFFFF;
+  border-radius: 30px;
+  padding: 30px;
+}
+.direction__item-nubber {
+  font-family: "Halvar Breitschrift";
+  font-size: 32px;
+  margin-bottom: 50px;
+  width: 70px;
+}
+.direction__item-nubber span {
+  padding: 5px 25px;
+  background: #014AEB;
+  border-radius: 25px;
+  color: #FFFFFF;
+}
+.direction__item-text {
+  font-family: Circe Regular, sans-serif;
+  font-size: 24px;
+  line-height: 120%;
+}
