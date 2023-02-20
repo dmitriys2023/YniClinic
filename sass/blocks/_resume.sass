@@ -1,0 +1,95 @@
+.resume
+   width: 100%
+   display: grid
+   grid-template-rows: auto 1fr
+   grid-template-columns: auto auto
+   gap: 15px
+   margin-top: 60px
+
+   &__block1
+      background: #F5F6F9
+      border-radius: 30px
+
+   &__block1-title
+      +hb
+      font-size: 56px
+      line-height: 108.5%
+      color: #26252A
+      margin-bottom: 100px
+
+   &__block1-text
+      +cr
+      font-size: 24px
+      line-height: 140%
+      max-width: 694px
+
+   &__block2
+      background: url('../image/resume/men.jpg') no-repeat center
+      border-radius: 30px
+
+   &__block2-title
+      +hb
+      font-size: 56px
+      line-height: 108.5%
+      color: #FFFFFF
+      margin-bottom: 66px
+
+   &__block2-text
+      +cr
+      font-size: 24px
+      line-height: 140%
+      font-weight: 800
+      color: #FFFFFF
+
+   &__block3
+      background: #EA5F70 url('../image/resume/womenresume.png') no-repeat left
+      border-radius: 42px
+      grid-column: span 2
+
+   &__body
+      display: flex
+      flex-direction: column
+
+   &__body .resume__block3-title
+      align-self: end
+
+   &__block3-title
+      +hb
+      width: 610px
+      font-style: normal
+      font-weight: 800
+      font-size: 40px
+      line-height: 120%
+      color: #FFFFFF
+      margin-bottom: 164px
+
+   &__items
+      display: flex
+
+   &__item
+      padding: 40px
+      background: #FFFFFF
+      border-radius: 30px
+      margin-right: 15px
+
+   &__item:last-child
+      padding: 40px
+      background: #FFFFFF
+      border-radius: 30px
+      margin-right: 0px
+   &__item-title
+      +hb
+      font-style: normal
+      font-weight: 800
+      font-size: 24px
+      line-height: 120%
+      color: #26252A
+      margin-bottom: 20px
+
+   &__item-text
+      +cr
+      font-style: normal
+      font-weight: 700
+      font-size: 18px
+      line-height: 130%
+      color: rgba(38, 37, 42, 0.7)

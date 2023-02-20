@@ -17,3 +17,13 @@
    font-weight: normal;
    font-style: normal;
    }
+
+
+
+   @mixin cr {
+      font-family: 'Circe Regular', sans-serif;
+   }
+   
+   @mixin hb {
+      font-family: 'Halvar Breitschrift', sans-serif;
+   }

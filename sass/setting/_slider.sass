@@ -1,0 +1,57 @@
+.slider
+   min-width: 0
+   position: relative
+   margin-top: 40px
+
+.slick-track
+   display: flex
+
+.slick-list
+   overflow: hidden
+
+.slider
+
+.slick-arrow
+   position: absolute
+   bottom: 50px
+   right: 40px
+   z-index: 10
+   border-radius: 30px
+   border: none
+   width: 80px
+   height: 50px
+   font-size: 0
+   cursor: pointer
+
+.slider .slick-arrow.slick-prev
+   background: url('../image/left.png') 0 0 / 100% no-repeat
+   margin-right: 100px
+
+.slider .slick-arrow.slick-next
+   background: url('../image/right.png') 0 0 / 100% no-repeat
+
+.slick-dots
+   display: flex
+   font-family: 'Halvar Breitschrift'
+   font-size: 40px
+   padding: 0
+   text-decoration: none
+
+   & li
+      display: none
+      color: #FFFFFF
+      list-style: none
+
+   & li.slick-active
+      color: #FFFFFF
+      list-style: none
+      display: block
+      & ::after
+         content: '/7'
+
+   & li button
+      color: #FFFFFF
+      background-color: transparent
+      border: none
+      padding: 0
+      margin: 0

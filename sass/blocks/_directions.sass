@@ -5,12 +5,13 @@
    position: relative
    margin-top: 70px
    &__title
-      font-family: 'Halvar Breitschrift'
+      +hb
       font-size: 56px
       color: #FFFFFF
       width: 576px
+      justify-content: space-around
    &__text
-      font-family: 'Halvar Breitschrift'
+      +hb
       font-size: 24px
       line-height: 120%
       width: 305px
@@ -21,29 +22,29 @@
       left: 954px
       top: 157px
    &__items
-      width: 100%
-      margin-top: 245px
       display: flex
+      margin-top: 245px
+      justify-content: space-between
+      width: 100%
       gap: 15px
 
 .direction__item
    background: #FFFFFF
    border-radius: 30px
    padding: 30px
-
+   width: 100%
    &-nubber
-      font-family: 'Halvar Breitschrift'
+      +hb
       font-size: 32px
       margin-bottom: 50px
       width: 70px
       & span
-         padding: 5px 25px
+         padding: 5px 35px
          background: #014AEB
          border-radius: 25px
-
          color: #FFFFFF
 
    &-text
-      font-family: Circe Regular, sans-serif
+      +cr
       font-size: 24px
       line-height: 120%

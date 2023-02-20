@@ -1,0 +1,125 @@
+.results
+   margin-top: 70px
+   &__body
+      display: grid
+      grid-template-columns: 480px 805px
+      grid-template-rows: object-fit 1fr 1fr
+      gap: 15px
+
+   &__body.reverse
+      margin-top: 15px
+      grid-template-columns: 805px 480px
+      grid-template-rows: 1fr
+   &__body.reverse:first-child
+      grid-column: 2
+
+   &__text
+      +hb
+      font-size: 24px
+      line-height: 145%
+      color: #26252A
+
+.results__block1
+
+.block
+   background: #EA5F70
+   border-radius: 30px
+   padding: 40px
+
+   &__title
+      +hb
+      font-size: 40px
+      color: #FFFFFF
+   &__text
+      +cr
+      font-size: 24px
+      color: #FFFFFF
+
+.results__block2
+
+.block2
+   background: #F5F6F9
+   border-radius: 30px
+   position: relative
+   padding: 67px 40px 40px 40px
+   & img:nth-child(2)
+      position: absolute
+      bottom: 84px
+      right: 40px
+   & img:nth-child(3)
+      position: absolute
+      bottom: 60px
+      right: 40px
+   & img:nth-child(4)
+      position: absolute
+      bottom: 40px
+      right: 40px
+
+.circle1
+   position: absolute
+   width: 20px
+   height: 20px
+   background: #014AEB
+   box-shadow: 0px 0px 4px rgba(49, 112, 235, 0.3)
+   border-radius: 50%
+   top: 217px
+   right: 200px
+   transition: .5s
+   cursor: pointer
+   &:hover
+      transform: scale(1.2)
+      transition: .5s
+
+.circle2
+   cursor: pointer
+   position: absolute
+   width: 20px
+   height: 20px
+   background: #EA5F70
+   box-shadow: 0px 0px 4px rgba(49, 112, 235, 0.3)
+   border-radius: 50%
+   bottom: 130px
+   right: 83px
+   transition: .5s
+   &:hover
+      transform: scale(1.2)
+      transition: .5s
+
+.info
+   transition: .5s
+   padding: 20px
+   border-radius: 10px
+   &__text
+      +cr
+      font-size: 24px
+      color: #FFFFFF
+      width: 400px
+
+.info1
+   opacity: 0
+   transition: .5s
+   top: 190px
+   left: 120px
+   position: absolute
+   background: #014AEB
+.info2
+   opacity: 0
+   transition: .5s
+   bottom: 100px
+   right: 120px
+   position: absolute
+   background: #EA5F70
+
+.info1.active
+   opacity: 1
+   transition: .5s
+
+.info2.active
+   opacity: 1
+   transition: .5s
+
+.results__block3
+
+.block3
+
+.results__block4

@@ -1,0 +1,28 @@
+{
+   "dependencies": {
+      "browser-sync": "^2.27.11",
+      "del": "^7.0.0",
+      "gulp": "^4.0.2",
+      "gulp-csso": "^4.0.1",
+      "gulp-file-include": "^2.3.0",
+      "gulp-htmlmin": "^5.0.1",
+      "jquery": "^3.6.3"
+   },
+   "name": "yniclinic",
+   "version": "1.0.0",
+   "main": "index.js",
+   "scripts": {
+      "start": "gulp"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/dmitriys2023/YniClinic.git"
+   },
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/dmitriys2023/YniClinic/issues"
+   },
+   "homepage": "https://github.com/dmitriys2023/YniClinic#readme",
+   "description": ""
+}
