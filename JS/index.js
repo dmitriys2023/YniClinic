@@ -1,3 +1,5 @@
+// const { active } = require("browser-sync");
+
 $(document).ready(function () {
    $('.slider').slick({
       dots: true,
@@ -6,26 +8,42 @@ $(document).ready(function () {
    });
 })
 
+// const modal = [
+//    { text: 'с 3% до 30% позиций достигли ТOП-30 поиска', id: 1 },
+//    { text: 'с 3% до 30% позиций достигли ТOП-30 поиска', id: 2 },
+//    // { text: 'Тестовый текст', id: 3 },
+//    // { text: 'Тестовый текст', id: 4 },
+//    // { text: 'Тестовый текст', id: 5 }
+// ]
 
-const cr1 = document.querySelector('.circle1')
-const cr2 = document.querySelector('.circle2')
+// function createModal(object) {
+//    const block2 = document.querySelector('.block2')
 
-const info1 = document.querySelector('.info1')
-const info2 = document.querySelector('.info2')
+//    return block2.insertAdjacentHTML('beforeend', `
+//       <div class="block2__info info info${object.id}">
+//          <div class="info__text">${object.text}</div>
+//       </div>
+//    `)
+// }
 
-console.log(cr1)
 
-cr1.addEventListener('mouseover', (e) => {
-   info1.classList.add('active')
+// modal.forEach(obj => {
+//    createModal(obj)
+// })
+
+const cr = document.querySelectorAll('.cr')
+
+
+cr.forEach((cir, index) => {
+   const info = document.querySelector(`.info${index + 1}`)
+   cir.addEventListener('mouseover', () => {
+      info.classList.add('active')
+   })
+   cir.addEventListener('mouseout', () => {
+      info.classList.remove('active')
+   })
 })
-cr1.addEventListener('mouseout', (e) => {
-   info1.classList.remove('active')
-})
 
 
-cr2.addEventListener('mouseover', (e) => {
-   info2.classList.add('active')
-})
-cr2.addEventListener('mouseout', (e) => {
-   info2.classList.remove('active')
-})
+
+

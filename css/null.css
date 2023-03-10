@@ -12,6 +12,28 @@
    line-height: 1.15; /* 1 */
    -webkit-text-size-adjust: 100%; /* 2 */
  }
+ input {outline:none;}
+
+ :focus::-webkit-input-placeholder {
+   color: transparent;
+   border-color: transparent;
+ }
+ 
+ :focus::-moz-placeholder {
+   color: transparent;
+   border-color: transparent;
+ }
+ 
+ :focus:-moz-placeholder {
+   color: transparent;
+   border-color: transparent;
+ }
+ 
+ :focus:-ms-input-placeholder {
+   color: transparent;
+   border-color: transparent;
+
+ }
  
  /* Sections
     ========================================================================== */

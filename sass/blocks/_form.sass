@@ -22,15 +22,14 @@
       top: 325px
       right: -90px
 
-   &__form
    &__input
       margin: 20px 50px 20px 0px
       border: none
       border-bottom: 2px solid #26252A
       padding: 10px 0 5px 0
+
    &__input::-webkit-input-placeholder
       +cr
-
       font-style: normal
       font-weight: 400
       font-size: 24px
@@ -96,3 +95,8 @@
    line-height: 132.66%
    text-decoration-line: underline
    color: #144890
+
+input[type="text"]
+   +cr
+   font-size: 20px
+   line-height: inherit

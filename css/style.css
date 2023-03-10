@@ -490,44 +490,51 @@
   right: 40px;
 }
 
-.circle1 {
+.cr {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #014AEB;
   box-shadow: 0px 0px 4px rgba(49, 112, 235, 0.3);
   border-radius: 50%;
-  top: 217px;
-  right: 200px;
   transition: 0.5s;
   cursor: pointer;
 }
-.circle1:hover {
+.cr:hover {
   transform: scale(1.2);
   transition: 0.5s;
 }
 
+.circle1 {
+  top: 217px;
+  right: 200px;
+  background: #014AEB;
+}
+
 .circle2 {
-  cursor: pointer;
-  position: absolute;
-  width: 20px;
-  height: 20px;
   background: #EA5F70;
-  box-shadow: 0px 0px 4px rgba(49, 112, 235, 0.3);
-  border-radius: 50%;
   bottom: 130px;
   right: 83px;
-  transition: 0.5s;
 }
-.circle2:hover {
-  transform: scale(1.2);
-  transition: 0.5s;
+
+.circle3 {
+  background: #014AEB;
+  top: 217px;
+  right: 200px;
+}
+
+.circle4 {
+  background: #EA5F70;
+  bottom: 130px;
+  right: 83px;
 }
 
 .info {
   transition: 0.5s;
   padding: 20px;
   border-radius: 10px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
 }
 .info__text {
   font-family: "Circe Regular", sans-serif;
@@ -537,29 +544,36 @@
 }
 
 .info1 {
-  opacity: 0;
-  transition: 0.5s;
   top: 190px;
   left: 120px;
-  position: absolute;
   background: #014AEB;
 }
 
 .info2 {
-  opacity: 0;
-  transition: 0.5s;
   bottom: 100px;
   right: 120px;
-  position: absolute;
   background: #EA5F70;
 }
 
-.info1.active {
-  opacity: 1;
-  transition: 0.5s;
+.info3 {
+  top: 190px;
+  left: 120px;
+  background: #014AEB;
 }
 
-.info2.active {
+.info4 {
+  bottom: 100px;
+  right: 120px;
+  background: #EA5F70;
+}
+
+.info5 {
+  top: 40px;
+  right: -60px;
+  background: #EA5F70;
+}
+
+.info1.active, .info2.active, .info3.active, .info4.active, .info5.active {
   opacity: 1;
   transition: 0.5s;
 }
@@ -577,6 +591,7 @@
   text-align: center;
 }
 .twice__items {
+  position: relative;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -597,6 +612,13 @@
   line-height: 120%;
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.circle5 {
+  position: absolute;
+  background: #EA5F70;
+  top: 79.8px;
+  right: 401.1px;
 }
 
 .resume {
@@ -800,4 +822,10 @@
   line-height: 132.66%;
   text-decoration-line: underline;
   color: #144890;
+}
+
+input[type=text] {
+  font-family: "Circe Regular", sans-serif;
+  font-size: 20px;
+  line-height: inherit;
 }
